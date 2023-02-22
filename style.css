@@ -1,0 +1,53 @@
+
+
+/* create course button */
+.create-cor{
+      background: #0062A9;
+      padding: 8px;
+      border-radius: 8px;
+      color: white !important;
+      margin-right: 10px;
+      text-decoration: none !important;
+}
+
+.view-report{
+      float: right;
+}
+/*sidebar style  */
+.scrollbar-sidebar{
+      background: #0062A9;
+}
+.sidebar-ul li{
+      padding: 7px 0px;
+      list-style: none;
+      border-bottom: 1px solid white;
+}
+.sidebar-ul li a{
+      text-decoration: none;
+      color: white !important;
+      background: transparent !important;
+      font-size: 1.1rem;
+
+}
+
+
+/* main app */
+.app-main{
+      background-color: #D0EBFF;
+}
+
+/* icon */
+.icon{
+      width: 20px !important ;
+}
+/* bar and pie chart */
+.chart-container {
+      display: inline-block;
+      margin: 20px;
+      width: 400px;
+    }
+    
+    canvas {
+      background-color: #f1f1f1;
+    }
+    
