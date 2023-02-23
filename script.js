@@ -2,15 +2,23 @@
 var barChart = document.getElementById('bar-chart').getContext('2d');
 
 var data = {
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  labels: ['India', 'USA', 'Canada', 'Australia', 'UK', 'China'],
   datasets: [{
-    label: 'Sales',
-    data: [12, 19, 3, 5, 2, 3, 8],
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgba(54, 162, 235, 1)',
+    label: 'Top Students Department',
+    data: [31, 28, 26, 23, 20, 14,8 ],
+    backgroundColor: [
+      'rgba(54, 162, 235, 0.8)',
+        'rgba(244, 197, 75, 0.8)', 
+        'rgba(54, 162, 235, 0.8)',
+        'rgba(244, 197, 75, 0.8)', 
+        'rgba(54, 162, 235, 0.8)',
+        'rgba(244, 197, 75, 0.8)', 
+    ],
+    // borderColor: 'rgba(54, 162, 235, 1)',
     borderWidth: 1
   }]
 };
+
 
 var options = {
   scales: {
@@ -25,7 +33,7 @@ var options = {
 var myBarChart = new Chart(barChart, {
   type: 'horizontalBar',
   data: data,
-  options: options
+  options: options,
 });
 
 // Pie Chart

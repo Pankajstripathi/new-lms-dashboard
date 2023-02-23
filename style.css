@@ -1,5 +1,4 @@
 
-
 /* create course button */
 .create-cor{
       background: #0062A9;
@@ -41,13 +40,32 @@
       width: 20px !important ;
 }
 /* bar and pie chart */
-.chart-container {
+/* .chart-container {
       display: inline-block;
       margin: 20px;
-      width: 400px;
+      max-width: 100%;
     }
     
     canvas {
       background-color: #f1f1f1;
+      width: 100%;
+      height: auto;
+    }
+     */
+     .pie{
+      margin-left: 20px;
+    }
+
+    .imgg{
+      background-size: cover ;
+      object-fit: cover;
+          }
+    @media only screen and (max-width: 500px) {
+      .pie{
+            margin-left: 0px;
+            margin-top: 20px;
+
+          }
     }
     
+   
