@@ -39,33 +39,39 @@
 .icon{
       width: 20px !important ;
 }
-/* bar and pie chart */
-/* .chart-container {
-      display: inline-block;
-      margin: 20px;
-      max-width: 100%;
-    }
-    
-    canvas {
-      background-color: #f1f1f1;
-      width: 100%;
-      height: auto;
-    }
-     */
-     .pie{
+     /* .pie{
       margin-left: 20px;
-    }
+    } */
 
     .imgg{
       background-size: cover ;
       object-fit: cover;
           }
-    @media only screen and (max-width: 500px) {
+  /* graph */
+  #bar-chart-1{
+      height: 180px !important;
+      width: 500px !important;
+  }
+  
+/* progress bar in card */
+.progress {
+      height: 15x;
+      border-radius: 10px;
+      background-color: #eee;
+    }
+    
+    .progress-bar {
+      height: 100%;
+      border-radius: 10px;
+      background-color: #F4C54B;
+    }
+  @media only screen and (max-width: 500px) {
       .pie{
             margin-left: 0px;
             margin-top: 20px;
 
           }
+          #bar-chart-1{
+            width: 300px !important;
+          }
     }
-    
-   
