@@ -36,40 +36,6 @@ var myBarChart = new Chart(barChart, {
   options: options,
 });
 
-// Pie Chart
-var pieChart = document.getElementById('pie-chart').getContext('2d');
-
-var data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
-  datasets: [{
-    label: 'My First Dataset',
-    data: [12, 19, 3, 5, 2],
-    backgroundColor: [
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255, 206, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(153, 102, 255, 0.2)'
-    ],
-    borderColor: [
-      'rgba(255, 99, 132, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255, 206, 86, 1)',
-      'rgba(75, 192, 192, 1)',
-      'rgba(153, 102, 255, 1)'
-    ],
-    borderWidth: 1
-  }]
-};
-
-var options = {};
-
-var myPieChart = new Chart(pieChart, {
-  type: 'pie',
-  data: data,
-  options: options
-});
-
 
 // progrees bar in card
 let progressBar = document.querySelector('.progress-bar');
@@ -89,7 +55,7 @@ var myChart1 = new Chart(ctx1, {
       data: [20, 20, 3],
       backgroundColor: [
          'rgb(0, 98, 169)',
-        'rgb(79, 183, 52)',
+        'rgb(208, 208, 208)',
            'rgb(0, 98, 169)',
         
       ],
@@ -105,5 +71,22 @@ var myChart1 = new Chart(ctx1, {
   }
 });
 
-
-//// bnm,.
+// progress bar of learner dashboard 
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
